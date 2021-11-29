@@ -1,11 +1,11 @@
 # How to Contribute
 
-Thanks for your interest in contributing to `<project name>`! Here are a few general guidelines on contributing and
-reporting bugs that we ask you to review. Following these guidelines helps to communicate that you respect the time of
-the contributors managing and developing this open source project. In return, they should reciprocate that respect in
-addressing your issue, assessing changes, and helping you finalize your pull requests. In that spirit of mutual respect,
-we endeavour to review incoming issues and pull requests within 10 days, and will close any lingering issues or pull
-requests after 60 days of inactivity.
+Thanks for your interest in contributing to Gossip! Here are a few general guidelines on contributing and reporting bugs
+that we ask you to review. Following these guidelines helps to communicate that you respect the time of the contributors
+managing and developing this open source project. In return, they should reciprocate that respect in addressing your
+issue, assessing changes, and helping you finalize your pull requests. In that spirit of mutual respect, we endeavour to
+review incoming issues and pull requests within 10 days, and will close any lingering issues or pull requests after 60
+days of inactivity.
 
 Please note that all of your interactions in the project are subject to our [Code of Conduct](CODE_OF_CONDUCT.md). This
 includes creation of issues or pull requests, commenting on issues or pull requests, and extends to all interactions in
@@ -32,16 +32,16 @@ reserve breaking changes until the next major version release.
 
 ## Other Ways to Contribute
 
-We welcome anyone that wants to contribute to `<project name>` to triage and reply to open issues to help troubleshoot
-and fix existing bugs. Here is what you can do:
+We welcome anyone that wants to contribute to Gossip to triage and reply to open issues to help troubleshoot and fix
+existing bugs. Here is what you can do:
 
 - Help ensure that existing issues follows the recommendations from the _[Reporting Issues](#reporting-issues)_ section,
   providing feedback to the issue's author on what might be missing.
 - Review and update the existing content of our [Wiki](https://github.com/wayfair-incubator/Gossip/wiki) with up-to-date
   instructions and code samples.
-- Review existing pull requests, and testing patches against real existing applications that use `<project name>`.
+- Review existing pull requests, and testing patches against real existing applications that use Gossip.
 - Write a test, or add a missing test case to an existing test.
 
-Thanks again for your interest on contributing to `<project name>`!
+Thanks again for your interest on contributing to Gossip!
 
 :heart:
