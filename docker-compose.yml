@@ -1,0 +1,23 @@
+version: "3.2"
+
+services:
+  sql-server-db:
+    container_name: sql-server-db
+    image: mcr.microsoft.com/mssql/server:2017-CU27-ubuntu-16.04
+    environment:
+      SA_PASSWORD: "55Data!Access!Password!"
+      ACCEPT_EULA: "Y"
+      MSSQL_RPC_PORT: "135"
+      MSSQL_DTC_TCP_PORT: "51000"
+
+  test:
+    container_name: dotnet-test-container
+    image: mcr.microsoft.com/dotnet/sdk:5.0
+    environment:
+      DB_SERVER_NAME: "sql-server-db"
+      DB_SERVER_PORT: "1433"
+    volumes:
+      - ./:/gossip/app
+    command: ["/gossip/app/docker/run_integration_tests.sh"]
+    depends_on:
+      - sql-server-db

@@ -1,0 +1,7 @@
+version: "3.2"
+
+services:
+  sql-server-db:
+    ports:
+      - 11433:1433
+
