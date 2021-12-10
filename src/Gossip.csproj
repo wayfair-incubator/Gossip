@@ -1,6 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <Authors>Wayfair</Authors>
+    <Description>Extends the functionality of Dapper and allows performing database queries in .NET easily and quickly</Description>
+    <Copyright>Wayfair ©2021</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/wayfair-incubator/Gossip</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wayfair-incubator/Gossip</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>database, queries, dapper, gossip</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />    
