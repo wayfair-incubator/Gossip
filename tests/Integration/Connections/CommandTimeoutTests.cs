@@ -30,25 +30,11 @@ namespace Gossip.IntegrationTests.Connections
         [Test]
         public async Task When_command_timeout_is_lower_than_the_execution_time_it_should_not_throw_SqlException()
         {
-            var mssqlConnectionStringBuilder = new MsSqlConnectionStringBuilder();
-            var databaseServerAddress = DatabaseSetup.GetDatabaseServerAddress();
-            var connectionString = mssqlConnectionStringBuilder.Build(new ConnectionStringSettings
-            {
-                ApplicationName = "Test",
-                Database = "master",
-                MachineName = "Test",
-                Server = databaseServerAddress,
-                Password = "55Data!Access!Password!",
-                Username = "sa",
-                MaxPoolSize = 50,
-                DefaultCommandTimeout = 5
-            });
-
             var mssql = new MsSql();
 
             var db = Database
                 .Configure(mssql)
-                .WithConnectionString(() => new ConnectionString { Value = connectionString })
+                .WithConnectionString(() => new ConnectionString { Value = DatabaseSetup.LocalMsSqlConnectionString })
                 .WithCommandTimeout(2)
                 .Build();
 
