@@ -11,7 +11,7 @@ Oracle, etc). The package is designed for ease of working with single or batched
 transactions. Want to go deeper? Gossip also supports custom plugins and execution strategies to handle events just the
 way you want them.
 
-## Installation
+## Installation 
 
 Install the latest version from NuGet.
 
