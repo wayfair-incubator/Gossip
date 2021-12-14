@@ -1,0 +1,10 @@
+{
+  "name": "gossip-docs",
+  "description": "Documentation generator for the Gossip C# package",
+  "version": "1.0.0",
+  "author": "",
+  "dependencies": {
+    "js-yaml": "4.1.0"
+  },
+  "license": "MIT"
+}
