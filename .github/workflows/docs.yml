@@ -2,7 +2,7 @@ name: Build and Deploy Documentation
 on:
   push:
     branches:
-      - main
+      - yamithorn_add_docfx_documentation_generation
 
 jobs:
   deploy-docs:
