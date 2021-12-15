@@ -10,4 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Initial release.
 
-See the [README](https://github.com/wayfair-incubator/AeroSharp/blob/main/README.md) for more information.
+See the [README](https://github.com/wayfair-incubator/Gossip/blob/main/README.md) for more information.
