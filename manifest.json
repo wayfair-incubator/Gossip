@@ -1,0 +1,908 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Configuration.CredentialsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Configuration.CredentialsConfiguration.html",
+          "hash": "8mUXrn3/5tQ0nY2b+2hqnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Configuration.DatabaseMonitoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Configuration.DatabaseMonitoring.html",
+          "hash": "gFR94k5HFRaF9UZ+ZGVgWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Configuration.IDatabaseMonitoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Configuration.IDatabaseMonitoring.html",
+          "hash": "BQKLfYbSNh4jv+coRGQs0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Configuration.html",
+          "hash": "Jy88YeU51VhK4tJPUW78FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.ConnectionString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.ConnectionString.html",
+          "hash": "TseovHR3yhDetPA6dqRs6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Database.html",
+          "hash": "mhKDzdknmRzVvex8xxOvvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.DatabaseConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.DatabaseConfiguration.html",
+          "hash": "koAoVKdluOycUp7/yemp+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.DatabaseConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.DatabaseConnection.html",
+          "hash": "nKwycwn+rQDG4s5jLnmYnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.DatabaseConnectionProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.DatabaseConnectionProvider.html",
+          "hash": "gbG+h5qF+Akaf9J9V3CMfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Exceptions.DatabaseConnectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Exceptions.DatabaseConnectionException.html",
+          "hash": "J9onWpcK2ObG0IJE63TpwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Exceptions.DatabaseResolutionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Exceptions.DatabaseResolutionException.html",
+          "hash": "wfvBap2Q8uZ8C9htt/07oA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Exceptions.html",
+          "hash": "3NQauwdQztPgpR1fx0MoUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Factories.MsSql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Factories.MsSql.html",
+          "hash": "4P76UW4ooPcaEDaEFAMPOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Factories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Factories.html",
+          "hash": "gj4xeP6Utc9Zj+gC+3llGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.BulkInsertConfigurator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.BulkInsertConfigurator-1.html",
+          "hash": "ihPhSLL5i5pllMyyPhK8yA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.ExecutionDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.ExecutionDetails.html",
+          "hash": "FAfrPcUJtx1XzyH+p0sgkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.FunctionMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.FunctionMetadata.html",
+          "hash": "G855j8dCET0PnwVPRGF7Ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IBulkInsertConfigurator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IBulkInsertConfigurator-1.html",
+          "hash": "6oqqUlSmIpm2xXRxiq+rSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IBulkQueryExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IBulkQueryExecutor.html",
+          "hash": "BfogUlwDJP/xKhmCOm1bZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IExecutionDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IExecutionDetails.html",
+          "hash": "r2AGIxQIpNTH2G18WrUHgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IPartitionConfigurator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IPartitionConfigurator-1.html",
+          "hash": "a6XNdQZsH67CyjhVoBquzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IQueryConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IQueryConfigurator.html",
+          "hash": "Rr04N800Xgn8i/EwZQFTPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IQueryExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IQueryExecutor.html",
+          "hash": "hPC5cwYQzCvPV37b93gkjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IQueryExecutorProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IQueryExecutorProvider.html",
+          "hash": "5KQFRvWb0DbxC9syuqCH+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.ISqlConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.ISqlConnection.html",
+          "hash": "6ypq+elCfRBhp5TE23qmHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.IUpdatableQueryExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.IUpdatableQueryExecutor.html",
+          "hash": "rm3O3BE/pHZgHBI6otCyqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.PartitionedQueryConfigurator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.PartitionedQueryConfigurator-1.html",
+          "hash": "MdTZjq9B8pxeR4PoBmW6ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.QueryConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.QueryConfiguration.html",
+          "hash": "85ONNR2rVkFQzUZBU9P/3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.QueryConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.QueryConfigurator.html",
+          "hash": "JPM8WYzmyZhu9iS16BUqqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.QueryExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.QueryExecutor.html",
+          "hash": "OyoTCDUYlW+gm419SnSmVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.QueryExecutorProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.QueryExecutorProvider.html",
+          "hash": "UFvj0oulmMIiix4H5G187Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.Fluent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.Fluent.html",
+          "hash": "0blGt2vMhm056hWrvRs6pQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.IConnectionDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.IConnectionDetails.html",
+          "hash": "Sh3QOkLTFPnH1H6JBYBxKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.IConnectionString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.IConnectionString.html",
+          "hash": "USMewjxiZYkVpw9z3urPeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.IDatabaseConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.IDatabaseConfigurator.html",
+          "hash": "bw8TWraoSqIAo6+9KvFGLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.IDatabaseConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.IDatabaseConnection.html",
+          "hash": "D8hhFgLt31L0X4YcPeh/Lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.IDatabaseConnectionProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.IDatabaseConnectionProvider.html",
+          "hash": "VTFcEC+cQ30ev8amB/rQPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.ISqlConnectionFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.ISqlConnectionFactory.html",
+          "hash": "4d6sYCaMZ5qHy+v2ennxJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.NoopExecutionStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.NoopExecutionStrategy.html",
+          "hash": "VZ5qdKBNzQaEWHMMUdBWUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.SqlConnectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.SqlConnectionExtensions.html",
+          "hash": "TpnpSVN9VU6Q0pEmPDYOwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.SqlConnectionWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.SqlConnectionWrapper.html",
+          "hash": "i3Ep29qBXAP7VBIFQa/2Zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.UsageDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.UsageDetails.html",
+          "hash": "ZewiYz12ivbVgH7wz3Uemw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Connection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Connection.html",
+          "hash": "umxx9GC66cufoVw+KtkqEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.ConnectionStrings.ConnectionStringSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.ConnectionStrings.ConnectionStringSettings.html",
+          "hash": "QOOjCAUmKrzk9/fbaZxzJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.ConnectionStrings.IConnectionStringBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.ConnectionStrings.IConnectionStringBuilder.html",
+          "hash": "U+R7fIIMavJOz+P05ubzkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.ConnectionStrings.IConnectionStringProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.ConnectionStrings.IConnectionStringProvider.html",
+          "hash": "FujI24N9xE5orDcqlwtIVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.ConnectionStrings.IConnectionStringSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.ConnectionStrings.IConnectionStringSettings.html",
+          "hash": "xuQaLsTwxA+FZUf8OL2IuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.ConnectionStrings.MsSqlConnectionStringBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.ConnectionStrings.MsSqlConnectionStringBuilder.html",
+          "hash": "w+nOYKxamnEIEpUzSGgW/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.ConnectionStrings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.ConnectionStrings.html",
+          "hash": "RykP62bD8I4HbKaWw2kbtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Containers.IContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Containers.IContext.html",
+          "hash": "1V17zmG1neyJ/zBm+wjj0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Containers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Containers.html",
+          "hash": "AmE6UtdEQEIRSCMlaxCyng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Monitoring.IDatabaseMonitorReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Monitoring.IDatabaseMonitorReport.html",
+          "hash": "/zaLeSPNAzuQD4fYhYm3Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Monitoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Monitoring.html",
+          "hash": "+Z9CD7nH9uNPFs+tbzgKNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Plugins.IDatabasePlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Plugins.IDatabasePlugin.html",
+          "hash": "YxsEdkNc7uilxFwviQxwEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Plugins.IPluginManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Plugins.IPluginManager.html",
+          "hash": "Tcj46Q9pFww3YWKUNqWUyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Plugins.NullPluginException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Plugins.NullPluginException.html",
+          "hash": "A83irB2/x8/QQDp1zpI2MQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Plugins.PluginInstantiationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Plugins.PluginInstantiationException.html",
+          "hash": "5sPV7/V2RyDSMPDbcOrHLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Plugins.PluginManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Plugins.PluginManager.html",
+          "hash": "hbjLAH8NT/4ThFdu3wryXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Plugins.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Plugins.html",
+          "hash": "ssyimAnsRw7iJl/IbqUr0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Strategies.IExecutionStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Strategies.IExecutionStrategy.html",
+          "hash": "ZsQhs0XvtXuoZAGoHn6OJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Strategies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Strategies.html",
+          "hash": "bdWQnOHpfzRlqqgQwmwMiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Transactions.ITransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Transactions.ITransaction.html",
+          "hash": "gFbiB4Hp5IjucaQRuGxM2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Transactions.NullTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Transactions.NullTransaction.html",
+          "hash": "WGRxYffcrMv+BvyQa07s8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Transactions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Transactions.html",
+          "hash": "csPHO1BuKAP9G/axbUgg2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Utilities.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Utilities.CollectionExtensions.html",
+          "hash": "1qx8tO1ZBlZQIlwmobZ3ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Utilities.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Utilities.EnumerableExtensions.html",
+          "hash": "TFWZ9uO8yPf7cPLnd6z3Uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../site/yml/api/Gossip.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gossip.Utilities.html",
+          "hash": "9dycVlXilF7/LGWVLAet0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Toc",
+      "source_relative_path": "../site/yml/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "UO2rXSy1OoU6wN9WhnQU4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "bbgCOqK4xPdwVI7cPJhnow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "wzboHSPA3NnZmJmEsng3gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 67,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

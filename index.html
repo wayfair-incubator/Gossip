@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Gossip Docs | Gossip </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Gossip Docs | Gossip ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="gossip-docs">Gossip Docs</h1>
+
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#connections">Connections</a></li>
+<li><a href="#querying">Querying</a></li>
+<li><a href="#batched-queries">Batched Queries</a></li>
+<li><a href="#transactions">Transactions</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#execution-strategies">Execution Strategies</a></li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>Configure and build a database connection. <code>Database</code> offers a number of build options, including adding <a href="#plugins">plugins</a> and/or <a href="#execution-strategies">execution strategies</a> if desired.</p>
+<pre><code class="lang-csharp">var _dbConnectionProvider = Database
+  .Configure()
+  .WithCommandTimeout(dataAccessConfiguration.DefaultSqlCommandTimeout)  
+  .WithConnectionString(() =&gt; {
+    return new ConnectionString {
+      Value = connectionString,
+      Server = server,
+      Database = database,
+    };
+  })  
+  .Build();
+</code></pre>
+<h2 id="connections">Connections</h2>
+<h3 id="opening-a-connection-asynchronously">Opening a connection asynchronously</h3>
+<pre><code class="lang-csharp">using (var conn = await _provider.OpenAsync(cancellationToken)) {
+  var results = await conn.QueryAsync&lt;T&gt;(sql);
+}
+</code></pre>
+<h3 id="opening-a-connection-synchronously">Opening a connection synchronously</h3>
+<p>It is recommended that you use the asynchronous <code>OpenAsync</code> function.</p>
+<pre><code class="lang-csharp">using (var conn = _provider.Open()) {
+  var results = conn.Query&lt;T&gt;(sql);
+}
+</code></pre>
+<h2 id="querying">Querying</h2>
+<h2 id="async-vs-sync">Async vs Sync</h2>
+<p>Although the library supports synchronous functions, it is <em>highly</em> recommended that you use <code>async</code> in all instances.</p>
+<h2 id="simple-queries">Simple queries</h2>
+<p>For the absolute simplest queries, there are some quick and easy functions right on <code>IDatabaseConnection</code>. These are:</p>
+<pre><code class="lang-csharp">await conn.QueryAsync&lt;T&gt;(sql);
+await conn.QueryAsync&lt;T&gt;(sql, params);
+await conn.QueryFirstOrDefaultAsync&lt;T&gt;(sql);
+await conn.QueryFirstOrDefaultAsync&lt;T&gt;(sql, params);
+await conn.QuerySingleOrDefaultAsync&lt;T&gt;(sql);
+await conn.QuerySingleOrDefaultAsync&lt;T&gt;(sql, params);
+await conn.ExecuteAsync(sql, params);
+</code></pre>
+<h2 id="advanced-queries">Advanced queries</h2>
+<p>If your queries are not super straightforward, you should use the <code>conn.Configure()</code> builder. This is where all of the useful functionality lives. For this most part, the functionality looks similar to the following example, except that you can use a variety of query types.</p>
+<pre><code class="lang-csharp">await conn.Configure()
+  .WithQuery(sql)
+  .WithParameters(params)
+  .Build()
+  .QueryAsync&lt;T&gt;();
+</code></pre>
+<h2 id="batched-queries">Batched queries</h2>
+<p>This will batch large datasets into smaller queries that will be merged together so it appears that the query ran all at once. Currently the batch size is set to 10000. This is not currently configurable, but if you need it to be, please open an issue.</p>
+<pre><code class="lang-csharp">using (var conn = _userDatabaseConnectionProvider.Open()) {
+  return await conn.Configure()
+    .WithQuery(GetUsersByNamesSql)
+    .Build()
+    .BatchedBy(names)
+    .WithBatchParamAsJsonArray()
+    .QueryAsync&lt;DbUser&gt;();
+}
+</code></pre>
+<h3 id="how-it-works">How it works</h3>
+<p>To batch a query, you need to do the following things:</p>
+<ol>
+<li>Specify a query that contains a <code>@batchParam</code> variable. This variable will be replaced with a subset of the records.</li>
+<li>Specify a dataset (<code>.BatchedBy(array)</code>)</li>
+<li>Use a batch parameter callback to tell the batching process how to convert the batched array into a variable to be processed. The most common usage of this is to convert the chunk into a JSON array. If this is what you want, you can use the <code>.WithBatchParamAsJsonArray()</code> method. Otherwise, use the <code>.WithBatchParam(...)</code> function to do the transformation.</li>
+<li>That's it! Just call one of the query executing functions to perform the query (<code>.QueryAync</code>, <code>ExecuteAsync</code>, etc)</li>
+</ol>
+<h2 id="transactions">Transactions</h2>
+<h3 id="transactionscope">TransactionScope</h3>
+<p>Using <code>TransactionScope</code> allows database connections that are <em>opened within the scope</em> of the <code>TransactionScope</code> to automatically enlist in the scope. It is recommended to use this if you are using multi-database transactions. If you are using single-database transactions, use <code>.BeginTransaction()</code>.</p>
+<pre><code class="lang-csharp">using (var scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled)) {
+  using (var conn = await db.OpenAsync()) {
+      await conn.ExecuteAsync(&quot;INSERT INTO tblTest(Name) VALUES ('ABC')&quot;);
+  }
+  
+  scope.Complete();
+}
+</code></pre>
+<p>This should cover 99.9% of use-cases, but if you opened a connection outside of a TransactionScope and want to manually enlist it, you can do:</p>
+<pre><code class="lang-csharp">var conn = await db.OpenAsync();
+
+using (var scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled)) {
+  conn.EnlistTransaction(System.Transaction.Current);
+  await conn.ExecuteAsync(&quot;INSERT INTO tblTest(Name) VALUES ('ABC')&quot;);
+  scope.Complete();
+}
+</code></pre>
+<h3 id="begintransaction">BeginTransaction</h3>
+<p>You can use <code>.BeginTransaction()</code> the same way that you would with <code>SqlConnection</code>. Check out the official <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection.begintransaction?view=netframework-4.8">documentation</a>.</p>
+<p>An example:</p>
+<pre><code class="lang-csharp">using (var conn = await db.OpenAsync()) {
+  using (var tran = conn.BeginTransaction())
+  {
+    try {
+      await conn.ExecuteAsync(&quot;INSERT INTO tblTest(Name) VALUES ('ABC')&quot;);
+      tran.Commit();
+    } catch (Exception ex) {
+      tran.Rollback();
+    }
+  }  
+}
+</code></pre>
+<h2 id="plugins">Plugins</h2>
+<p>Plugins allow users to handle events by implementing the <code>IDatabasePlugin</code> interface. Connection and query events expose metrics and metadata about these data access calls. Plugins can be used by providing a factory method to the connection configuration builder using <code>.WithPlugin(...)</code>.</p>
+<p>The <code>IDatabasePlugin</code> interfaces exposes a number of events:</p>
+<pre><code class="lang-csharp">  public interface IDatabasePlugin
+    {
+        void OnBuild(UsageDetails usageDetails);
+        Task OnQueryExecutingAsync(IConnectionDetails connectionDetails, FunctionMetadata metadata);
+        Task OnQueryExecutedAsync(IConnectionDetails connectionDetails, IExecutionDetails executionDetails, FunctionMetadata metadata);
+        Task OnConnectionOpeningAsync(IConnectionDetails connectionDetails);
+        Task OnConnectionOpenAsync(IConnectionDetails connectionDetails, IExecutionDetails executionDetails);
+        Task OnConnectionExceptionAsync(IConnectionDetails connectionDetails);
+        Task OnDatabaseResolutionExceptionAsync(string database);
+        Task OnDatabaseMonitorExecutedAsync(IDatabaseMonitorReport databaseMonitorReport);
+    }
+</code></pre>
+<h2 id="execution-strategies">Execution strategies</h2>
+<p>In addition to plugins, we also allow you to implement custom query execution strategies. For instance, you may use this feature to add a bulkhead policy so that you can limit the number of queries being run at a given time.</p>
+<pre><code class="lang-csharp">var _dbConnectionProvider = Database
+  .Configure()
+  ...
+  .WithExecutionStrategy(executionStrategy)
+  ...
+  .Build();
+</code></pre>
+<p>The interface for an execution strategy is the following:</p>
+<pre><code class="lang-csharp">public interface IExecutionStrategy {
+  Task&lt;T&gt; ExecuteAsync&lt;T&gt;(Func&lt;Task&lt;T&gt;&gt; fn);
+  Task ExecuteAsync(Func&lt;Task&gt; fn);
+  T Execute&lt;T&gt;(Func&lt;T&gt; fn);
+  void Execute(Action fn);
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

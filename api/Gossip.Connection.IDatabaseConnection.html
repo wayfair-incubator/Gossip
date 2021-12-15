@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDatabaseConnection
+   | Gossip </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDatabaseConnection
+   | Gossip ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gossip.Connection.IDatabaseConnection">
+  
+  
+  <h1 id="Gossip_Connection_IDatabaseConnection" data-uid="Gossip.Connection.IDatabaseConnection" class="text-break">Interface IDatabaseConnection
+  </h1>
+  <div class="markdown level0 summary"><p>Database Connection</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gossip.Connection.html">Gossip.Connection</a></h6>
+  <h6><strong>Assembly</strong>: Gossip.dll</h6>
+  <h5 id="Gossip_Connection_IDatabaseConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDatabaseConnection : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_BeginTransaction.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.BeginTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L108">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_BeginTransaction_" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_BeginTransaction" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction">BeginTransaction()</h4>
+  <div class="markdown level1 summary"><p>Begin a transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITransaction BeginTransaction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_BeginTransaction_System_Data_IsolationLevel_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.BeginTransaction(System.Data.IsolationLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L120">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_BeginTransaction_" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_BeginTransaction_System_Data_IsolationLevel_" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction(System.Data.IsolationLevel)">BeginTransaction(System.Data.IsolationLevel)</h4>
+  <div class="markdown level1 summary"><p>Begin a transaction with a specified <see cref="!:System.Data.IsolationLevel"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITransaction BeginTransaction(System.Data.IsolationLevel isolationLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.isolationlevel">System.Data.IsolationLevel</a></td>
+        <td><span class="parametername">isolationLevel</span></td>
+        <td><p>The <see cref="!:System.Data.IsolationLevel"></see> of the transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_BeginTransaction_System_Data_IsolationLevel_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.BeginTransaction(System.Data.IsolationLevel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L127">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_BeginTransaction_" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_BeginTransaction_System_Data_IsolationLevel_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction(System.Data.IsolationLevel,System.String)">BeginTransaction(System.Data.IsolationLevel, String)</h4>
+  <div class="markdown level1 summary"><p>Begin a named transaction with a specified <see cref="!:System.Data.IsolationLevel"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITransaction BeginTransaction(System.Data.IsolationLevel isolationLevel, string transactionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.isolationlevel">System.Data.IsolationLevel</a></td>
+        <td><span class="parametername">isolationLevel</span></td>
+        <td><p>The <see cref="!:System.Data.IsolationLevel"></see> of the transaction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">transactionName</span></td>
+        <td><p>The transaction name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_BeginTransaction_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.BeginTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L114">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_BeginTransaction_" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_BeginTransaction_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.BeginTransaction(System.String)">BeginTransaction(String)</h4>
+  <div class="markdown level1 summary"><p>Begin a named transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITransaction BeginTransaction(string transactionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">transactionName</span></td>
+        <td><p>The transaction name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_Configure_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.Configure(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L23">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_Configure_" data-uid="Gossip.Connection.IDatabaseConnection.Configure*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_Configure_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.Configure(System.String,System.String)">Configure(String, String)</h4>
+  <div class="markdown level1 summary"><p>Configures the database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryConfigurator Configure(string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.IQueryConfigurator.html">IQueryConfigurator</a></td>
+        <td><p>IQueryConfigurator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_EnlistTransaction_Transaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.EnlistTransaction(Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L103">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_EnlistTransaction_" data-uid="Gossip.Connection.IDatabaseConnection.EnlistTransaction*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_EnlistTransaction_Transaction_" data-uid="Gossip.Connection.IDatabaseConnection.EnlistTransaction(Transaction)">EnlistTransaction(Transaction)</h4>
+  <div class="markdown level1 summary"><p>Enlist a transaction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EnlistTransaction(Transaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>transaction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_Execute_System_String_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.Execute(System.String%2CSystem.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L54">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_Execute_" data-uid="Gossip.Connection.IDatabaseConnection.Execute*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_Execute_System_String_System_Object_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.Execute(System.String,System.Object,System.String,System.String)">Execute(String, Object, String, String)</h4>
+  <div class="markdown level1 summary"><p>Execute parameterized SQL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Execute(string sql, object param = null, string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The number of rows affected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_ExecuteAsync_System_String_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.ExecuteAsync(System.String%2CSystem.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L44">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_ExecuteAsync_" data-uid="Gossip.Connection.IDatabaseConnection.ExecuteAsync*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_ExecuteAsync_System_String_System_Object_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.ExecuteAsync(System.String,System.Object,System.String,System.String)">ExecuteAsync(String, Object, String, String)</h4>
+  <div class="markdown level1 summary"><p>Execute parameterized SQL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; ExecuteAsync(string sql, object param = null, string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL query to run</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>Parameters to pass into the SQL query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>Caller name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>Caller location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>Integer number of rows affected</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_Query__1_System_String_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.Query%60%601(System.String%2CSystem.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L65">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_Query_" data-uid="Gossip.Connection.IDatabaseConnection.Query*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_Query__1_System_String_System_Object_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.Query``1(System.String,System.Object,System.String,System.String)">Query&lt;T&gt;(String, Object, String, String)</h4>
+  <div class="markdown level1 summary"><p>Execute parameterized sql</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; Query&lt;T&gt;(string sql, object param = null, string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><p>Result of the sql query, a collection of type T</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>generic type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_QueryAsync__1_System_String_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.QueryAsync%60%601(System.String%2CSystem.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L34">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_QueryAsync_" data-uid="Gossip.Connection.IDatabaseConnection.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_QueryAsync__1_System_String_System_Object_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.QueryAsync``1(System.String,System.Object,System.String,System.String)">QueryAsync&lt;T&gt;(String, Object, String, String)</h4>
+  <div class="markdown level1 summary"><p>Execute parameterized SQL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;T&gt;&gt; QueryAsync&lt;T&gt;(string sql, object param = null, string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL query to run</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>Parameters to pass into the SQL query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td><p>SQL query result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Generic return type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_QueryFirstOrDefaultAsync__1_System_String_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.QueryFirstOrDefaultAsync%60%601(System.String%2CSystem.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L76">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_QueryFirstOrDefaultAsync_" data-uid="Gossip.Connection.IDatabaseConnection.QueryFirstOrDefaultAsync*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_QueryFirstOrDefaultAsync__1_System_String_System_Object_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.QueryFirstOrDefaultAsync``1(System.String,System.Object,System.String,System.String)">QueryFirstOrDefaultAsync&lt;T&gt;(String, Object, String, String)</h4>
+  <div class="markdown level1 summary"><p>Executes Parameterized SQL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;T&gt; QueryFirstOrDefaultAsync&lt;T&gt;(string sql, object param = null, string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td><p>The first result of the sql query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Generic Type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_QuerySingleOrDefault__1_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.QuerySingleOrDefault%60%601(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L86">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_QuerySingleOrDefault_" data-uid="Gossip.Connection.IDatabaseConnection.QuerySingleOrDefault*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_QuerySingleOrDefault__1_System_String_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.QuerySingleOrDefault``1(System.String,System.String,System.String)">QuerySingleOrDefault&lt;T&gt;(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Executes SQL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T QuerySingleOrDefault&lt;T&gt;(string sql, string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The first result of the sql query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Generic Type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection_QuerySingleOrDefaultAsync__1_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection.QuerySingleOrDefaultAsync%60%601(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L97">View Source</a>
+  </span>
+  <a id="Gossip_Connection_IDatabaseConnection_QuerySingleOrDefaultAsync_" data-uid="Gossip.Connection.IDatabaseConnection.QuerySingleOrDefaultAsync*"></a>
+  <h4 id="Gossip_Connection_IDatabaseConnection_QuerySingleOrDefaultAsync__1_System_String_System_String_System_String_" data-uid="Gossip.Connection.IDatabaseConnection.QuerySingleOrDefaultAsync``1(System.String,System.String,System.String)">QuerySingleOrDefaultAsync&lt;T&gt;(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Execute sql</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;T&gt; QuerySingleOrDefaultAsync&lt;T&gt;(string sql, string callerMemberName = &quot;&quot;, string callerFilePath = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerMemberName</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callerFilePath</span></td>
+        <td><p>(internal use) for logging</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td><p>Result of the sql query, a collection of type T</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>generic type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_IDatabaseConnection.md&amp;value=---%0Auid%3A%20Gossip.Connection.IDatabaseConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/IDatabaseConnection.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

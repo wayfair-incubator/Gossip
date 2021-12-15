@@ -1,0 +1,1285 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QueryExecutor
+   | Gossip </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QueryExecutor
+   | Gossip ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gossip.Connection.Fluent.QueryExecutor">
+  
+  
+  <h1 id="Gossip_Connection_Fluent_QueryExecutor" data-uid="Gossip.Connection.Fluent.QueryExecutor" class="text-break">Class QueryExecutor
+  </h1>
+  <div class="markdown level0 summary"><p>Executes configured queries.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">QueryExecutor</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Gossip.Connection.Fluent.IUpdatableQueryExecutor.html">IUpdatableQueryExecutor</a></div>
+    <div><a class="xref" href="Gossip.Connection.Fluent.IQueryExecutor.html">IQueryExecutor</a></div>
+    <div><a class="xref" href="Gossip.Connection.Fluent.IBulkQueryExecutor.html">IBulkQueryExecutor</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gossip.Connection.Fluent.html">Gossip.Connection.Fluent</a></h6>
+  <h6><strong>Assembly</strong>: Gossip.dll</h6>
+  <h5 id="Gossip_Connection_Fluent_QueryExecutor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QueryExecutor : object, IUpdatableQueryExecutor, IQueryExecutor, IBulkQueryExecutor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor__ctor_Gossip_Connection_Fluent_ISqlConnection_Gossip_Connection_Fluent_QueryConfiguration_Gossip_Connection_Fluent_FunctionMetadata_Gossip_Plugins_IPluginManager_Gossip_Strategies_IExecutionStrategy_.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.%23ctor(Gossip.Connection.Fluent.ISqlConnection%2CGossip.Connection.Fluent.QueryConfiguration%2CGossip.Connection.Fluent.FunctionMetadata%2CGossip.Plugins.IPluginManager%2CGossip.Strategies.IExecutionStrategy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L19">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor__ctor_" data-uid="Gossip.Connection.Fluent.QueryExecutor.#ctor*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor__ctor_Gossip_Connection_Fluent_ISqlConnection_Gossip_Connection_Fluent_QueryConfiguration_Gossip_Connection_Fluent_FunctionMetadata_Gossip_Plugins_IPluginManager_Gossip_Strategies_IExecutionStrategy_" data-uid="Gossip.Connection.Fluent.QueryExecutor.#ctor(Gossip.Connection.Fluent.ISqlConnection,Gossip.Connection.Fluent.QueryConfiguration,Gossip.Connection.Fluent.FunctionMetadata,Gossip.Plugins.IPluginManager,Gossip.Strategies.IExecutionStrategy)">QueryExecutor(ISqlConnection, QueryConfiguration, FunctionMetadata, IPluginManager, IExecutionStrategy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryExecutor(ISqlConnection conn, QueryConfiguration config, FunctionMetadata metadata, IPluginManager pluginManager, IExecutionStrategy executionStrategy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.ISqlConnection.html">ISqlConnection</a></td>
+        <td><span class="parametername">conn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.QueryConfiguration.html">QueryConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.FunctionMetadata.html">FunctionMetadata</a></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Plugins.IPluginManager.html">IPluginManager</a></td>
+        <td><span class="parametername">pluginManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Strategies.IExecutionStrategy.html">IExecutionStrategy</a></td>
+        <td><span class="parametername">executionStrategy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_BatchedBy__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.BatchedBy%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L113">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_BatchedBy_" data-uid="Gossip.Connection.Fluent.QueryExecutor.BatchedBy*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_BatchedBy__1_IEnumerable___0__" data-uid="Gossip.Connection.Fluent.QueryExecutor.BatchedBy``1(IEnumerable{``0})">BatchedBy&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPartitionConfigurator&lt;T&gt; BatchedBy&lt;T&gt;(IEnumerable&lt;T&gt; partitionedBy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">partitionedBy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.IPartitionConfigurator-1.html">IPartitionConfigurator</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_Execute.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.Execute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L108">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_Execute_" data-uid="Gossip.Connection.Fluent.QueryExecutor.Execute*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_Execute" data-uid="Gossip.Connection.Fluent.QueryExecutor.Execute">Execute()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Execute()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_ExecuteAsync.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.ExecuteAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L93">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_ExecuteAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.ExecuteAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_ExecuteAsync" data-uid="Gossip.Connection.Fluent.QueryExecutor.ExecuteAsync">ExecuteAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; ExecuteAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_ExecuteScalar__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.ExecuteScalar%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L98">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_ExecuteScalar_" data-uid="Gossip.Connection.Fluent.QueryExecutor.ExecuteScalar*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_ExecuteScalar__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.ExecuteScalar``1">ExecuteScalar&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T ExecuteScalar&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_ExecuteScalarAsync__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.ExecuteScalarAsync%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L103">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_ExecuteScalarAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.ExecuteScalarAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_ExecuteScalarAsync__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.ExecuteScalarAsync``1">ExecuteScalarAsync&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; ExecuteScalarAsync&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_InsertInBulkAsync__1_IEnumerable___0__System_String_System_Int32_Dictionary_System_String_System_String__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.InsertInBulkAsync%60%601(IEnumerable%7B%60%600%7D%2CSystem.String%2CSystem.Int32%2CDictionary%7BSystem.String%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L118">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_InsertInBulkAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.InsertInBulkAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_InsertInBulkAsync__1_IEnumerable___0__System_String_System_Int32_Dictionary_System_String_System_String__" data-uid="Gossip.Connection.Fluent.QueryExecutor.InsertInBulkAsync``1(IEnumerable{``0},System.String,System.Int32,Dictionary{System.String,System.String})">InsertInBulkAsync&lt;T&gt;(IEnumerable&lt;T&gt;, String, Int32, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task InsertInBulkAsync&lt;T&gt;(IEnumerable&lt;T&gt; data, string tableName, int timeoutInSeconds, Dictionary&lt;string, string&gt; columnMappings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">timeoutInSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">columnMappings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_Query__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.Query%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L53">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_Query_" data-uid="Gossip.Connection.Fluent.QueryExecutor.Query*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_Query__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.Query``1">Query&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; Query&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryAsync__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryAsync%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L58">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync``1">QueryAsync&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;T&gt;&gt; QueryAsync&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryAsync__3_Func___0___1___2__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryAsync%60%603(Func%7B%60%600%2C%60%601%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L63">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync__3_Func___0___1___2__" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync``3(Func{``0,``1,``2})">QueryAsync&lt;TFirst, TSecond, TReturn&gt;(Func&lt;TFirst, TSecond, TReturn&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TReturn&gt;(Func&lt;TFirst, TSecond, TReturn&gt; mapping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryAsync__4_Func___0___1___2___3__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryAsync%60%604(Func%7B%60%600%2C%60%601%2C%60%602%2C%60%603%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L68">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync__4_Func___0___1___2___3__" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync``4(Func{``0,``1,``2,``3})">QueryAsync&lt;TFirst, TSecond, TThird, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TReturn&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TReturn&gt; mapping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryAsync__5_Func___0___1___2___3___4__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryAsync%60%605(Func%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L73">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync__5_Func___0___1___2___3___4__" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync``5(Func{``0,``1,``2,``3,``4})">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt; mapping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryAsync__6_Func___0___1___2___3___4___5__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryAsync%60%606(Func%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L78">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync__6_Func___0___1___2___3___4___5__" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync``6(Func{``0,``1,``2,``3,``4,``5})">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt; mapping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFifth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryAsync__7_Func___0___1___2___3___4___5___6__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryAsync%60%607(Func%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L83">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync__7_Func___0___1___2___3___4___5___6__" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync``7(Func{``0,``1,``2,``3,``4,``5,``6})">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt; mapping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFifth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSixth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryAsync__8_Func___0___1___2___3___4___5___6___7__.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryAsync%60%608(Func%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L88">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryAsync__8_Func___0___1___2___3___4___5___6___7__" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryAsync``8(Func{``0,``1,``2,``3,``4,``5,``6,``7})">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;(Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt; mapping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFifth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSixth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSeventh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryFirstOrDefault__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryFirstOrDefault%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L33">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryFirstOrDefault_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryFirstOrDefault*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryFirstOrDefault__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryFirstOrDefault``1">QueryFirstOrDefault&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T QueryFirstOrDefault&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QueryFirstOrDefaultAsync__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QueryFirstOrDefaultAsync%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L38">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QueryFirstOrDefaultAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryFirstOrDefaultAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QueryFirstOrDefaultAsync__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.QueryFirstOrDefaultAsync``1">QueryFirstOrDefaultAsync&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; QueryFirstOrDefaultAsync&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QuerySingleOrDefault__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QuerySingleOrDefault%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L43">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QuerySingleOrDefault_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QuerySingleOrDefault*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QuerySingleOrDefault__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.QuerySingleOrDefault``1">QuerySingleOrDefault&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T QuerySingleOrDefault&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_QuerySingleOrDefaultAsync__1.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.QuerySingleOrDefaultAsync%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L48">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_QuerySingleOrDefaultAsync_" data-uid="Gossip.Connection.Fluent.QueryExecutor.QuerySingleOrDefaultAsync*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_QuerySingleOrDefaultAsync__1" data-uid="Gossip.Connection.Fluent.QueryExecutor.QuerySingleOrDefaultAsync``1">QuerySingleOrDefaultAsync&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; QuerySingleOrDefaultAsync&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor_UpdateConfig_Gossip_Connection_Fluent_QueryConfiguration_.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor.UpdateConfig(Gossip.Connection.Fluent.QueryConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L123">View Source</a>
+  </span>
+  <a id="Gossip_Connection_Fluent_QueryExecutor_UpdateConfig_" data-uid="Gossip.Connection.Fluent.QueryExecutor.UpdateConfig*"></a>
+  <h4 id="Gossip_Connection_Fluent_QueryExecutor_UpdateConfig_Gossip_Connection_Fluent_QueryConfiguration_" data-uid="Gossip.Connection.Fluent.QueryExecutor.UpdateConfig(Gossip.Connection.Fluent.QueryConfiguration)">UpdateConfig(QueryConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateConfig(QueryConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.QueryConfiguration.html">QueryConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Gossip.Connection.Fluent.IUpdatableQueryExecutor.html">IUpdatableQueryExecutor</a>
+  </div>
+  <div>
+      <a class="xref" href="Gossip.Connection.Fluent.IQueryExecutor.html">IQueryExecutor</a>
+  </div>
+  <div>
+      <a class="xref" href="Gossip.Connection.Fluent.IBulkQueryExecutor.html">IBulkQueryExecutor</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_Fluent_QueryExecutor.md&amp;value=---%0Auid%3A%20Gossip.Connection.Fluent.QueryExecutor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/Fluent/QueryExecutor.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

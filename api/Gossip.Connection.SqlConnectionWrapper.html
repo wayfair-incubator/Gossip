@@ -1,0 +1,2264 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SqlConnectionWrapper
+   | Gossip </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SqlConnectionWrapper
+   | Gossip ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gossip.Connection.SqlConnectionWrapper">
+  
+  
+  <h1 id="Gossip_Connection_SqlConnectionWrapper" data-uid="Gossip.Connection.SqlConnectionWrapper" class="text-break">Class SqlConnectionWrapper
+  </h1>
+  <div class="markdown level0 summary"><p>SQL connection wrapper</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SqlConnectionWrapper</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Gossip.Connection.Fluent.ISqlConnection.html">ISqlConnection</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gossip.Connection.html">Gossip.Connection</a></h6>
+  <h6><strong>Assembly</strong>: Gossip.dll</h6>
+  <h5 id="Gossip_Connection_SqlConnectionWrapper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SqlConnectionWrapper : object, ISqlConnection, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper__ctor_Gossip_Connection_IConnectionString_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.%23ctor(Gossip.Connection.IConnectionString)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L28">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper__ctor_" data-uid="Gossip.Connection.SqlConnectionWrapper.#ctor*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper__ctor_Gossip_Connection_IConnectionString_" data-uid="Gossip.Connection.SqlConnectionWrapper.#ctor(Gossip.Connection.IConnectionString)">SqlConnectionWrapper(IConnectionString)</h4>
+  <div class="markdown level1 summary"><p>SQL connection wrapper constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlConnectionWrapper(IConnectionString connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.IConnectionString.html">IConnectionString</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>Database connection string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_BeginTransaction.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.BeginTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L185">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction">BeginTransaction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITransaction BeginTransaction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_BeginTransaction_System_Data_IsolationLevel_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.BeginTransaction(System.Data.IsolationLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L195">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction_System_Data_IsolationLevel_" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction(System.Data.IsolationLevel)">BeginTransaction(System.Data.IsolationLevel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITransaction BeginTransaction(System.Data.IsolationLevel isolationLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.isolationlevel">System.Data.IsolationLevel</a></td>
+        <td><span class="parametername">isolationLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_BeginTransaction_System_Data_IsolationLevel_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.BeginTransaction(System.Data.IsolationLevel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L200">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction_System_Data_IsolationLevel_System_String_" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction(System.Data.IsolationLevel,System.String)">BeginTransaction(System.Data.IsolationLevel, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITransaction BeginTransaction(System.Data.IsolationLevel isolationLevel, string transactionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.isolationlevel">System.Data.IsolationLevel</a></td>
+        <td><span class="parametername">isolationLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">transactionName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_BeginTransaction_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.BeginTransaction(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L190">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_BeginTransaction_System_String_" data-uid="Gossip.Connection.SqlConnectionWrapper.BeginTransaction(System.String)">BeginTransaction(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITransaction BeginTransaction(string transactionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">transactionName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Transactions.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_BulkInsertAsync__1_System_String_IEnumerable___0__System_Int32_Action_System_Object_SqlRowsCopiedEventArgs__System_Int32_Dictionary_System_String_System_String__System_Int32_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.BulkInsertAsync%60%601(System.String%2CIEnumerable%7B%60%600%7D%2CSystem.Int32%2CAction%7BSystem.Object%2CSqlRowsCopiedEventArgs%7D%2CSystem.Int32%2CDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L167">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_BulkInsertAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.BulkInsertAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_BulkInsertAsync__1_System_String_IEnumerable___0__System_Int32_Action_System_Object_SqlRowsCopiedEventArgs__System_Int32_Dictionary_System_String_System_String__System_Int32_" data-uid="Gossip.Connection.SqlConnectionWrapper.BulkInsertAsync``1(System.String,IEnumerable{``0},System.Int32,Action{System.Object,SqlRowsCopiedEventArgs},System.Int32,Dictionary{System.String,System.String},System.Int32)">BulkInsertAsync&lt;T&gt;(String, IEnumerable&lt;T&gt;, Int32, Action&lt;Object, SqlRowsCopiedEventArgs&gt;, Int32, Dictionary&lt;String, String&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Bulk insert data into a table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BulkInsertAsync&lt;T&gt;(string insertIntoTable, IEnumerable&lt;T&gt; data, int batchSize = 1000, Action&lt;object, SqlRowsCopiedEventArgs&gt; notifyCallback = null, int notifyAfter = 10000, Dictionary&lt;string, string&gt; columnMapping = null, int timeoutSeconds = 30)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">insertIntoTable</span></td>
+        <td><p>The name of the table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">batchSize</span></td>
+        <td><p>The size of the batches for bulk insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <span class="xref">SqlRowsCopiedEventArgs</span>&gt;</td>
+        <td><span class="parametername">notifyCallback</span></td>
+        <td><p>A callback to pass to <see cref="!:SqlRowsCopiedEventHandler"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">notifyAfter</span></td>
+        <td><p>Occurs after each batch has been processed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">columnMapping</span></td>
+        <td><p>A dictionary of column mappings.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">timeoutSeconds</span></td>
+        <td><p>The timeout, specified in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of data being bulk inserted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_Close.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L161">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_Close_" data-uid="Gossip.Connection.SqlConnectionWrapper.Close*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_Close" data-uid="Gossip.Connection.SqlConnectionWrapper.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Synchronously close the SQL connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_CreateCommandDefinition_System_String_System_Object_System_Nullable_System_Int32__CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.CreateCommandDefinition(System.String%2CSystem.Object%2CSystem.Nullable%7BSystem.Int32%7D%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L49">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_CreateCommandDefinition_" data-uid="Gossip.Connection.SqlConnectionWrapper.CreateCommandDefinition*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_CreateCommandDefinition_System_String_System_Object_System_Nullable_System_Int32__CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.CreateCommandDefinition(System.String,System.Object,System.Nullable{System.Int32},CancellationToken,IDbTransaction)">CreateCommandDefinition(String, Object, Nullable&lt;Int32&gt;, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Creates Command Definition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandDefinition CreateCommandDefinition(string query, object parameters, int? commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>SQL command</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Parameters to pass into SQL command</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>SQL command timeout</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>cancellation token</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CommandDefinition</span></td>
+        <td><p>Command Definition</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_Dispose.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L206">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_Dispose_" data-uid="Gossip.Connection.SqlConnectionWrapper.Dispose*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_Dispose" data-uid="Gossip.Connection.SqlConnectionWrapper.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_EnlistTransaction_Transaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.EnlistTransaction(Transaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L180">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_EnlistTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.EnlistTransaction*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_EnlistTransaction_Transaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.EnlistTransaction(Transaction)">EnlistTransaction(Transaction)</h4>
+  <div class="markdown level1 summary"><p>Enlist the given transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnlistTransaction(Transaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to enlist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_Execute_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.Execute(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L143">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_Execute_" data-uid="Gossip.Connection.SqlConnectionWrapper.Execute*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_Execute_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.Execute(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">Execute(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Synchronously execute the query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Execute(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token for cooperatively cancelling the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The number of rows impacted by the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_ExecuteAsync_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.ExecuteAsync(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L137">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_ExecuteAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.ExecuteAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_ExecuteAsync_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.ExecuteAsync(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">ExecuteAsync(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously execute the query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; ExecuteAsync(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token for cooperatively cancelling the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><p>The number of rows impacted by the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_ExecuteScalar__1_System_String_System_Object_System_Int32_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.ExecuteScalar%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L78">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_ExecuteScalar_" data-uid="Gossip.Connection.SqlConnectionWrapper.ExecuteScalar*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_ExecuteScalar__1_System_String_System_Object_System_Int32_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.ExecuteScalar``1(System.String,System.Object,System.Int32,IDbTransaction)">ExecuteScalar&lt;T&gt;(String, Object, Int32, IDbTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T ExecuteScalar&lt;T&gt;(string query, object parameters, int commandTimeout, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_ExecuteScalarAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.ExecuteScalarAsync%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L83">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_ExecuteScalarAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.ExecuteScalarAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_ExecuteScalarAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.ExecuteScalarAsync``1(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">ExecuteScalarAsync&lt;T&gt;(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; ExecuteScalarAsync&lt;T&gt;(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_GetConnectionDetails.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.GetConnectionDetails%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L35">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_GetConnectionDetails_" data-uid="Gossip.Connection.SqlConnectionWrapper.GetConnectionDetails*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_GetConnectionDetails" data-uid="Gossip.Connection.SqlConnectionWrapper.GetConnectionDetails">GetConnectionDetails()</h4>
+  <div class="markdown level1 summary"><p>Get the connection details such as the server and database name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConnectionDetails GetConnectionDetails()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.IConnectionDetails.html">IConnectionDetails</a></td>
+        <td><p>The <a class="xref" href="Gossip.Connection.IConnectionDetails.html">IConnectionDetails</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_GetSqlConnection.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.GetSqlConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L215">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_GetSqlConnection_" data-uid="Gossip.Connection.SqlConnectionWrapper.GetSqlConnection*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_GetSqlConnection" data-uid="Gossip.Connection.SqlConnectionWrapper.GetSqlConnection">GetSqlConnection()</h4>
+  <div class="markdown level1 summary"><p>Gets sql connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlConnection GetSqlConnection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><p>SqlConnection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_Open.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.Open%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L155">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_Open_" data-uid="Gossip.Connection.SqlConnectionWrapper.Open*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_Open" data-uid="Gossip.Connection.SqlConnectionWrapper.Open">Open()</h4>
+  <div class="markdown level1 summary"><p>Synchronously open the SQL connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Open()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_OpenAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.OpenAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L149">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_OpenAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.OpenAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_OpenAsync_CancellationToken_" data-uid="Gossip.Connection.SqlConnectionWrapper.OpenAsync(CancellationToken)">OpenAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously open the SQL connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OpenAsync(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token for cooperatively cancelling the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_Query__1_System_String_System_Object_System_Int32_System_Boolean_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.Query%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CSystem.Boolean%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L89">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_Query_" data-uid="Gossip.Connection.SqlConnectionWrapper.Query*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_Query__1_System_String_System_Object_System_Int32_System_Boolean_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.Query``1(System.String,System.Object,System.Int32,System.Boolean,IDbTransaction)">Query&lt;T&gt;(String, Object, Int32, Boolean, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Synchronously execute the query and return the results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; Query&lt;T&gt;(string query, object parameters, int commandTimeout, bool buffered, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters for the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>The effective timeout for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">buffered</span></td>
+        <td><p>Whether to buffer the results in memory or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>An <see cref="!:IDbTransaction"></see> for transactional functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><p>The <see cref="!:IEnumerable&lt;T>"></see> of results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of results to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryAsync%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L95">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync``1(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">QueryAsync&lt;T&gt;(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously execute the query and return the results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;T&gt;&gt; QueryAsync&lt;T&gt;(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters for the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>The effective timeout for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token to cooperatively cancel the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>An <see cref="!:IDbTransaction"></see> for transactional functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td><p>The <see cref="!:IEnumerable&lt;T>"></see> of results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of results to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryAsync__3_System_String_Func___0___1___2__System_Object_System_Int32_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryAsync%60%603(System.String%2CFunc%7B%60%600%2C%60%601%2C%60%602%7D%2CSystem.Object%2CSystem.Int32%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L101">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryAsync__3_System_String_Func___0___1___2__System_Object_System_Int32_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync``3(System.String,Func{``0,``1,``2},System.Object,System.Int32,IDbTransaction)">QueryAsync&lt;TFirst, TSecond, TReturn&gt;(String, Func&lt;TFirst, TSecond, TReturn&gt;, Object, Int32, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Perform a asynchronous multi-mapping query with 2 input types.
+This returns a single type, combined from the raw types via <code data-dev-comment-type="paramref" class="paramref">mapping</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TReturn&gt;(string query, Func&lt;TFirst, TSecond, TReturn&gt; mapping, object parameters, int commandTimeout, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td><p>The function to map row types to the return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td><p>An enumerable of <code data-dev-comment-type="typeparamref" class="typeparamref">TReturn</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td><p>The first type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td><p>The second type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td><p>The combined type to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryAsync__4_System_String_Func___0___1___2___3__System_Object_System_Int32_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryAsync%60%604(System.String%2CFunc%7B%60%600%2C%60%601%2C%60%602%2C%60%603%7D%2CSystem.Object%2CSystem.Int32%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L107">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryAsync__4_System_String_Func___0___1___2___3__System_Object_System_Int32_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync``4(System.String,Func{``0,``1,``2,``3},System.Object,System.Int32,IDbTransaction)">QueryAsync&lt;TFirst, TSecond, TThird, TReturn&gt;(String, Func&lt;TFirst, TSecond, TThird, TReturn&gt;, Object, Int32, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Perform a asynchronous multi-mapping query with 3 input types.
+This returns a single type, combined from the raw types via <code data-dev-comment-type="paramref" class="paramref">mapping</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TReturn&gt;(string query, Func&lt;TFirst, TSecond, TThird, TReturn&gt; mapping, object parameters, int commandTimeout, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td><p>The function to map row types to the return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td><p>An enumerable of <code data-dev-comment-type="typeparamref" class="typeparamref">TReturn</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td><p>The first type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td><p>The second type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td><p>The third type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td><p>The combined type to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryAsync__5_System_String_Func___0___1___2___3___4__System_Object_System_Int32_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryAsync%60%605(System.String%2CFunc%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%7D%2CSystem.Object%2CSystem.Int32%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L113">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryAsync__5_System_String_Func___0___1___2___3___4__System_Object_System_Int32_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync``5(System.String,Func{``0,``1,``2,``3,``4},System.Object,System.Int32,IDbTransaction)">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;(String, Func&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;, Object, Int32, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Perform a asynchronous multi-mapping query with 4 input types.
+This returns a single type, combined from the raw types via <code data-dev-comment-type="paramref" class="paramref">mapping</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;(string query, Func&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt; mapping, object parameters, int commandTimeout, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td><p>The function to map row types to the return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td><p>An enumerable of <code data-dev-comment-type="typeparamref" class="typeparamref">TReturn</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td><p>The first type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td><p>The second type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td><p>The third type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td><p>The fourth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td><p>The combined type to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryAsync__6_System_String_Func___0___1___2___3___4___5__System_Object_System_Int32_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryAsync%60%606(System.String%2CFunc%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%7D%2CSystem.Object%2CSystem.Int32%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L119">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryAsync__6_System_String_Func___0___1___2___3___4___5__System_Object_System_Int32_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync``6(System.String,Func{``0,``1,``2,``3,``4,``5},System.Object,System.Int32,IDbTransaction)">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;(String, Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;, Object, Int32, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Perform a asynchronous multi-mapping query with 5 input types.
+This returns a single type, combined from the raw types via <code data-dev-comment-type="paramref" class="paramref">mapping</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;(string query, Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt; mapping, object parameters, int commandTimeout, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TFifth, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td><p>The function to map row types to the return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td><p>An enumerable of <code data-dev-comment-type="typeparamref" class="typeparamref">TReturn</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td><p>The first type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td><p>The second type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td><p>The third type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td><p>The fourth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFifth</span></td>
+        <td><p>The fifth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td><p>The combined type to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryAsync__7_System_String_Func___0___1___2___3___4___5___6__System_Object_System_Int32_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryAsync%60%607(System.String%2CFunc%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%7D%2CSystem.Object%2CSystem.Int32%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L125">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryAsync__7_System_String_Func___0___1___2___3___4___5___6__System_Object_System_Int32_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync``7(System.String,Func{``0,``1,``2,``3,``4,``5,``6},System.Object,System.Int32,IDbTransaction)">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;(String, Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;, Object, Int32, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Perform a asynchronous multi-mapping query with 6 input types.
+This returns a single type, combined from the raw types via <code data-dev-comment-type="paramref" class="paramref">mapping</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;(string query, Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt; mapping, object parameters, int commandTimeout, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td><p>The function to map row types to the return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td><p>An enumerable of <code data-dev-comment-type="typeparamref" class="typeparamref">TReturn</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td><p>The first type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td><p>The second type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td><p>The third type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td><p>The fourth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFifth</span></td>
+        <td><p>The fifth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSixth</span></td>
+        <td><p>The sixth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td><p>The combined type to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryAsync__8_System_String_Func___0___1___2___3___4___5___6___7__System_Object_System_Int32_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryAsync%60%608(System.String%2CFunc%7B%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%7D%2CSystem.Object%2CSystem.Int32%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L131">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryAsync__8_System_String_Func___0___1___2___3___4___5___6___7__System_Object_System_Int32_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryAsync``8(System.String,Func{``0,``1,``2,``3,``4,``5,``6,``7},System.Object,System.Int32,IDbTransaction)">QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;(String, Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;, Object, Int32, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Perform a asynchronous multi-mapping query with 7 input types.
+This returns a single type, combined from the raw types via <code data-dev-comment-type="paramref" class="paramref">mapping</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TReturn&gt;&gt; QueryAsync&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;(string query, Func&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt; mapping, object parameters, int commandTimeout, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The SQL to execute for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TFirst, TSecond, TThird, TFourth, TFifth, TSixth, TSeventh, TReturn&gt;</td>
+        <td><span class="parametername">mapping</span></td>
+        <td><p>The function to map row types to the return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to use for this query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>Number of seconds before command execution timeout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction to use for this query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;TReturn&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFirst</span></td>
+        <td><p>The first type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSecond</span></td>
+        <td><p>The second type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TThird</span></td>
+        <td><p>The third type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFourth</span></td>
+        <td><p>The fourth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TFifth</span></td>
+        <td><p>The fifth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSixth</span></td>
+        <td><p>The sixth type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSeventh</span></td>
+        <td><p>The seventh type in the recordset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td><p>The combined type to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryFirstOrDefault__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryFirstOrDefault%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L55">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryFirstOrDefault_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryFirstOrDefault*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryFirstOrDefault__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryFirstOrDefault``1(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">QueryFirstOrDefault&lt;T&gt;(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Synchronously query for the first result, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T QueryFirstOrDefault&lt;T&gt;(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters for the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>The effective timeout for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token to cooperatively cancel the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>An <see cref="!:IDbTransaction"></see> for transactional functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The first result of the query, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of results to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QueryFirstOrDefaultAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QueryFirstOrDefaultAsync%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L61">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QueryFirstOrDefaultAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryFirstOrDefaultAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QueryFirstOrDefaultAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QueryFirstOrDefaultAsync``1(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">QueryFirstOrDefaultAsync&lt;T&gt;(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously query for the first result, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; QueryFirstOrDefaultAsync&lt;T&gt;(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters for the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>The effective timeout for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token to cooperatively cancel the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>An <see cref="!:IDbTransaction"></see> for transactional functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td><p>The first result of the query, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of results to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QuerySingleOrDefault__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QuerySingleOrDefault%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L67">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QuerySingleOrDefault_" data-uid="Gossip.Connection.SqlConnectionWrapper.QuerySingleOrDefault*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QuerySingleOrDefault__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QuerySingleOrDefault``1(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">QuerySingleOrDefault&lt;T&gt;(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Synchronously query for a single result, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T QuerySingleOrDefault&lt;T&gt;(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters for the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>The effective timeout for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token to cooperatively cancel the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>An <see cref="!:IDbTransaction"></see> for transactional functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The result of the query, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of results to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper_QuerySingleOrDefaultAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper.QuerySingleOrDefaultAsync%60%601(System.String%2CSystem.Object%2CSystem.Int32%2CCancellationToken%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L73">View Source</a>
+  </span>
+  <a id="Gossip_Connection_SqlConnectionWrapper_QuerySingleOrDefaultAsync_" data-uid="Gossip.Connection.SqlConnectionWrapper.QuerySingleOrDefaultAsync*"></a>
+  <h4 id="Gossip_Connection_SqlConnectionWrapper_QuerySingleOrDefaultAsync__1_System_String_System_Object_System_Int32_CancellationToken_IDbTransaction_" data-uid="Gossip.Connection.SqlConnectionWrapper.QuerySingleOrDefaultAsync``1(System.String,System.Object,System.Int32,CancellationToken,IDbTransaction)">QuerySingleOrDefaultAsync&lt;T&gt;(String, Object, Int32, CancellationToken, IDbTransaction)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously query for a single result, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; QuerySingleOrDefaultAsync&lt;T&gt;(string query, object parameters, int commandTimeout, CancellationToken cancellationToken, IDbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters for the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">commandTimeout</span></td>
+        <td><p>The effective timeout for the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token to cooperatively cancel the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>An <see cref="!:IDbTransaction"></see> for transactional functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td><p>The result of the query, or the default value of <see cref="!:T"></see> if no result is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of results to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Gossip.Connection.Fluent.ISqlConnection.html">ISqlConnection</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Connection_SqlConnectionWrapper.md&amp;value=---%0Auid%3A%20Gossip.Connection.SqlConnectionWrapper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Connection/SqlConnectionWrapper.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

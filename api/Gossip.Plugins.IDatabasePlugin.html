@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDatabasePlugin
+   | Gossip </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDatabasePlugin
+   | Gossip ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gossip.Plugins.IDatabasePlugin">
+  
+  
+  <h1 id="Gossip_Plugins_IDatabasePlugin" data-uid="Gossip.Plugins.IDatabasePlugin" class="text-break">Interface IDatabasePlugin
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for database plugins.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gossip.Plugins.html">Gossip.Plugins</a></h6>
+  <h6><strong>Assembly</strong>: Gossip.dll</h6>
+  <h5 id="Gossip_Plugins_IDatabasePlugin_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDatabasePlugin</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnBuild_Gossip_Connection_UsageDetails_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnBuild(Gossip.Connection.UsageDetails)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L17">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnBuild_" data-uid="Gossip.Plugins.IDatabasePlugin.OnBuild*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnBuild_Gossip_Connection_UsageDetails_" data-uid="Gossip.Plugins.IDatabasePlugin.OnBuild(Gossip.Connection.UsageDetails)">OnBuild(UsageDetails)</h4>
+  <div class="markdown level1 summary"><p>Executes when DatabaseConnectionProvider is built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnBuild(UsageDetails usageDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.UsageDetails.html">UsageDetails</a></td>
+        <td><span class="parametername">usageDetails</span></td>
+        <td><p>Library usage details</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnConnectionExceptionAsync_Gossip_Connection_IConnectionDetails_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnConnectionExceptionAsync(Gossip.Connection.IConnectionDetails)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L51">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnConnectionExceptionAsync_" data-uid="Gossip.Plugins.IDatabasePlugin.OnConnectionExceptionAsync*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnConnectionExceptionAsync_Gossip_Connection_IConnectionDetails_" data-uid="Gossip.Plugins.IDatabasePlugin.OnConnectionExceptionAsync(Gossip.Connection.IConnectionDetails)">OnConnectionExceptionAsync(IConnectionDetails)</h4>
+  <div class="markdown level1 summary"><p>Executes when database connection handles an exception during connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnConnectionExceptionAsync(IConnectionDetails connectionDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.IConnectionDetails.html">IConnectionDetails</a></td>
+        <td><span class="parametername">connectionDetails</span></td>
+        <td><p>Database connection details</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnConnectionOpenAsync_Gossip_Connection_IConnectionDetails_Gossip_Connection_Fluent_IExecutionDetails_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnConnectionOpenAsync(Gossip.Connection.IConnectionDetails%2CGossip.Connection.Fluent.IExecutionDetails)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L45">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnConnectionOpenAsync_" data-uid="Gossip.Plugins.IDatabasePlugin.OnConnectionOpenAsync*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnConnectionOpenAsync_Gossip_Connection_IConnectionDetails_Gossip_Connection_Fluent_IExecutionDetails_" data-uid="Gossip.Plugins.IDatabasePlugin.OnConnectionOpenAsync(Gossip.Connection.IConnectionDetails,Gossip.Connection.Fluent.IExecutionDetails)">OnConnectionOpenAsync(IConnectionDetails, IExecutionDetails)</h4>
+  <div class="markdown level1 summary"><p>Executes when database connection has finished opening</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnConnectionOpenAsync(IConnectionDetails connectionDetails, IExecutionDetails executionDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.IConnectionDetails.html">IConnectionDetails</a></td>
+        <td><span class="parametername">connectionDetails</span></td>
+        <td><p>Database connection details</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.IExecutionDetails.html">IExecutionDetails</a></td>
+        <td><span class="parametername">executionDetails</span></td>
+        <td><p>Execution details providing information about the query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnConnectionOpeningAsync_Gossip_Connection_IConnectionDetails_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnConnectionOpeningAsync(Gossip.Connection.IConnectionDetails)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L38">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnConnectionOpeningAsync_" data-uid="Gossip.Plugins.IDatabasePlugin.OnConnectionOpeningAsync*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnConnectionOpeningAsync_Gossip_Connection_IConnectionDetails_" data-uid="Gossip.Plugins.IDatabasePlugin.OnConnectionOpeningAsync(Gossip.Connection.IConnectionDetails)">OnConnectionOpeningAsync(IConnectionDetails)</h4>
+  <div class="markdown level1 summary"><p>Executes when database connection is opening</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnConnectionOpeningAsync(IConnectionDetails connectionDetails)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.IConnectionDetails.html">IConnectionDetails</a></td>
+        <td><span class="parametername">connectionDetails</span></td>
+        <td><p>Database connection details</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnDatabaseMonitorExecutedAsync_Gossip_Monitoring_IDatabaseMonitorReport_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnDatabaseMonitorExecutedAsync(Gossip.Monitoring.IDatabaseMonitorReport)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L62">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnDatabaseMonitorExecutedAsync_" data-uid="Gossip.Plugins.IDatabasePlugin.OnDatabaseMonitorExecutedAsync*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnDatabaseMonitorExecutedAsync_Gossip_Monitoring_IDatabaseMonitorReport_" data-uid="Gossip.Plugins.IDatabasePlugin.OnDatabaseMonitorExecutedAsync(Gossip.Monitoring.IDatabaseMonitorReport)">OnDatabaseMonitorExecutedAsync(IDatabaseMonitorReport)</h4>
+  <div class="markdown level1 summary"><p>Executes when database monitor is executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnDatabaseMonitorExecutedAsync(IDatabaseMonitorReport databaseMonitorReport)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Monitoring.IDatabaseMonitorReport.html">IDatabaseMonitorReport</a></td>
+        <td><span class="parametername">databaseMonitorReport</span></td>
+        <td><p><a class="xref" href="Gossip.Monitoring.IDatabaseMonitorReport.html">IDatabaseMonitorReport</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnDatabaseResolutionExceptionAsync_System_String_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnDatabaseResolutionExceptionAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L57">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnDatabaseResolutionExceptionAsync_" data-uid="Gossip.Plugins.IDatabasePlugin.OnDatabaseResolutionExceptionAsync*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnDatabaseResolutionExceptionAsync_System_String_" data-uid="Gossip.Plugins.IDatabasePlugin.OnDatabaseResolutionExceptionAsync(System.String)">OnDatabaseResolutionExceptionAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Executes when database connection exception is resolved/handled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnDatabaseResolutionExceptionAsync(string database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">database</span></td>
+        <td><p>Database name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnQueryExecutedAsync_Gossip_Connection_IConnectionDetails_Gossip_Connection_Fluent_IExecutionDetails_Gossip_Connection_Fluent_FunctionMetadata_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnQueryExecutedAsync(Gossip.Connection.IConnectionDetails%2CGossip.Connection.Fluent.IExecutionDetails%2CGossip.Connection.Fluent.FunctionMetadata)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L32">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnQueryExecutedAsync_" data-uid="Gossip.Plugins.IDatabasePlugin.OnQueryExecutedAsync*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnQueryExecutedAsync_Gossip_Connection_IConnectionDetails_Gossip_Connection_Fluent_IExecutionDetails_Gossip_Connection_Fluent_FunctionMetadata_" data-uid="Gossip.Plugins.IDatabasePlugin.OnQueryExecutedAsync(Gossip.Connection.IConnectionDetails,Gossip.Connection.Fluent.IExecutionDetails,Gossip.Connection.Fluent.FunctionMetadata)">OnQueryExecutedAsync(IConnectionDetails, IExecutionDetails, FunctionMetadata)</h4>
+  <div class="markdown level1 summary"><p>Executes when SQL query is complete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnQueryExecutedAsync(IConnectionDetails connectionDetails, IExecutionDetails executionDetails, FunctionMetadata metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.IConnectionDetails.html">IConnectionDetails</a></td>
+        <td><span class="parametername">connectionDetails</span></td>
+        <td><p>Database connection details</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.IExecutionDetails.html">IExecutionDetails</a></td>
+        <td><span class="parametername">executionDetails</span></td>
+        <td><p>Execution details providing information about the query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.FunctionMetadata.html">FunctionMetadata</a></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin_OnQueryExecutingAsync_Gossip_Connection_IConnectionDetails_Gossip_Connection_Fluent_FunctionMetadata_.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin.OnQueryExecutingAsync(Gossip.Connection.IConnectionDetails%2CGossip.Connection.Fluent.FunctionMetadata)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L24">View Source</a>
+  </span>
+  <a id="Gossip_Plugins_IDatabasePlugin_OnQueryExecutingAsync_" data-uid="Gossip.Plugins.IDatabasePlugin.OnQueryExecutingAsync*"></a>
+  <h4 id="Gossip_Plugins_IDatabasePlugin_OnQueryExecutingAsync_Gossip_Connection_IConnectionDetails_Gossip_Connection_Fluent_FunctionMetadata_" data-uid="Gossip.Plugins.IDatabasePlugin.OnQueryExecutingAsync(Gossip.Connection.IConnectionDetails,Gossip.Connection.Fluent.FunctionMetadata)">OnQueryExecutingAsync(IConnectionDetails, FunctionMetadata)</h4>
+  <div class="markdown level1 summary"><p>Executes while SQL query is in progress</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnQueryExecutingAsync(IConnectionDetails connectionDetails, FunctionMetadata metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.IConnectionDetails.html">IConnectionDetails</a></td>
+        <td><span class="parametername">connectionDetails</span></td>
+        <td><p>Database connection details</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gossip.Connection.Fluent.FunctionMetadata.html">FunctionMetadata</a></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/new/main/apiSpec/new?filename=Gossip_Plugins_IDatabasePlugin.md&amp;value=---%0Auid%3A%20Gossip.Plugins.IDatabasePlugin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/wayfair-incubator/Gossip/blob/main/src/Plugins/IDatabasePlugin.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
