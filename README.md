@@ -61,6 +61,8 @@ await conn.ExecuteAsync(sql, params);
 
 For more detailed examples, consult the documentation.
 
+Full library documentation can be found at the [docs site](https://wayfair-incubator.github.io/Gossip/)
+
 ## Roadmap
 
 See the [open issues](https://github.com/wayfair-incubator/Gossip/issues) for a list of proposed features (and known issues).
