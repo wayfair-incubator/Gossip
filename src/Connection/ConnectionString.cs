@@ -1,8 +1,10 @@
 ﻿using System.Data.SqlClient;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gossip.Connection
 {
     /// <inheritdoc cref="IConnectionString"/>
+    [ExcludeFromCodeCoverage]
     public class ConnectionString : IConnectionString
     {
         public string Value { get; set; }

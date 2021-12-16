@@ -1,8 +1,10 @@
-﻿using System.Threading;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Threading;
 using Gossip.Transactions;
 
 namespace Gossip.Connection.Fluent
 {
+    [ExcludeFromCodeCoverage]
     public class QueryConfiguration
     {
         private ITransaction _transaction;

@@ -1,8 +1,11 @@
-﻿namespace Gossip.Connection.Fluent
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Gossip.Connection.Fluent
 {
     /// <summary>
     ///     Represents metadata about a given function call.
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class FunctionMetadata
     {
         /// <summary>

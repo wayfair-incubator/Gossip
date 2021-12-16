@@ -1,5 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace Gossip.Connection
 {
+    [ExcludeFromCodeCoverage]
     internal class DatabaseConfigurationValidator
     {
         public ValidationResult Validate(DatabaseConfiguration config)
@@ -13,6 +16,7 @@ namespace Gossip.Connection
         }
     }
 
+    [ExcludeFromCodeCoverage]
     internal class ValidationResult
     {
         public bool IsValid { get; set; }

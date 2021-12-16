@@ -1,7 +1,9 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gossip.Plugins
 {
+    [ExcludeFromCodeCoverage]
     public class PluginInstantiationException : Exception
     {
         public Type PluginType { get; }

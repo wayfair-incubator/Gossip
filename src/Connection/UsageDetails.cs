@@ -1,8 +1,10 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace Gossip.Connection
 {
+    [ExcludeFromCodeCoverage]
     public class UsageDetails
     {
         public string LibraryName { get; }

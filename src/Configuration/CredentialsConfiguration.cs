@@ -1,8 +1,11 @@
-﻿namespace Gossip.Configuration
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Gossip.Configuration
 {
     /// <summary>
     /// Credentials Configuration
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CredentialsConfiguration
     {
         /// <summary>
