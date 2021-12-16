@@ -15,7 +15,6 @@ using IsolationLevel = System.Data.IsolationLevel;
 
 namespace Gossip.TestSupport.Adapters.Sqlite
 {
-    [ExcludeFromCodeCoverage]
     public class SqliteConnection : ISqlConnection
     {
         private readonly string _connectionString;
