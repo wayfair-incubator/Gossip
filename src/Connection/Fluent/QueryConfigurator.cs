@@ -6,7 +6,6 @@ using Gossip.Transactions;
 namespace Gossip.Connection.Fluent
 {
     /// <inheritdoc cref="IQueryConfigurator"/>
-    [ExcludeFromCodeCoverage]
     public class QueryConfigurator : IQueryConfigurator
     {
         private readonly ISqlConnection _conn;

@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Gossip.Connection.Fluent;
+﻿using Gossip.Connection.Fluent;
 using Gossip.ConnectionStrings;
 
 namespace Gossip.Connection.Factories
@@ -7,7 +6,6 @@ namespace Gossip.Connection.Factories
     /// <summary>
     ///  Creates connection to MsSQL databases
     /// </summary>
-    [ExcludeFromCodeCoverage]
     public class MsSql : ISqlConnectionFactory
     {
         /// <inheritdoc/>

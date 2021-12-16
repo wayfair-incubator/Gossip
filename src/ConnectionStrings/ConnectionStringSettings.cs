@@ -1,13 +1,10 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace Gossip.ConnectionStrings
+﻿namespace Gossip.ConnectionStrings
 {
     /// <inheritdoc cref="IConnectionStringSettings"/>
 
     /// <summary>
     /// Database connection string settings
     /// </summary>
-    [ExcludeFromCodeCoverage]
     public class ConnectionStringSettings : IConnectionStringSettings
     {
         /// <inheritdoc/>

@@ -1,10 +1,8 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Gossip.Transactions
 {
-    [ExcludeFromCodeCoverage]
     internal class MsSqlTransactionWrapper : ITransaction
     {
         private readonly SqlTransaction _transaction;

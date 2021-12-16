@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Gossip.Strategies;
 
@@ -10,7 +9,6 @@ namespace Gossip.Connection
     /// <summary>
     /// Noop Execution Strategy
     /// </summary>
-    [ExcludeFromCodeCoverage]
     public class NoopExecutionStrategy : IExecutionStrategy
     {
         /// <inheritdoc />

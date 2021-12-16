@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Gossip.Configuration;
 using Gossip.Plugins;
@@ -11,7 +10,6 @@ namespace Gossip.Connection
     /// <summary>
     /// Database Configuration
     /// </summary>
-    [ExcludeFromCodeCoverage]
     public class DatabaseConfiguration
     {
         /// <summary>

@@ -4,7 +4,6 @@ using Gossip.Transactions;
 
 namespace Gossip.Connection.Fluent
 {
-    [ExcludeFromCodeCoverage]
     public class QueryConfiguration
     {
         private ITransaction _transaction;
