@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Threading;
+﻿using System.Threading;
 using Gossip.Transactions;
 
 namespace Gossip.Connection.Fluent

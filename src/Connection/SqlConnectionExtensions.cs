@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Diagnostics.CodeAnalysis;
 using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,7 +10,6 @@ namespace Gossip.Connection
     /// <summary>
     /// SQL connection extensions
     /// </summary>
-    [ExcludeFromCodeCoverage]
     public static class SqlConnectionExtensions
     {
         /// <summary>
