@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Reflection;
 
@@ -12,6 +13,7 @@ namespace Gossip.Connection
     ///
     /// Minimal properties implemented for that singular use-case right now
     /// </summary>
+    [ExcludeFromCodeCoverage]
     internal class ObjectDataReader<T> : IObjectDataReader
     {
         private readonly IEnumerator<T> _dataEnumerator;

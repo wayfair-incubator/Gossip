@@ -1,9 +1,11 @@
-﻿using Gossip.Connection;
+﻿using System.Diagnostics.CodeAnalysis;
+using Gossip.Connection;
 using Gossip.Connection.Fluent;
 using Gossip.ConnectionStrings;
 
 namespace Gossip.TestSupport.Adapters.MockDb
 {
+    [ExcludeFromCodeCoverage]
     public class MockDatabase : ISqlConnectionFactory
     {
         private readonly MockSqlConnection _conn;

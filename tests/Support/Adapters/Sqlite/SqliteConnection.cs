@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SQLite;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Transactions;
@@ -14,6 +15,7 @@ using IsolationLevel = System.Data.IsolationLevel;
 
 namespace Gossip.TestSupport.Adapters.Sqlite
 {
+    [ExcludeFromCodeCoverage]
     public class SqliteConnection : ISqlConnection
     {
         private readonly string _connectionString;
