@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Gossip.Connection
 {
-
+    [ExcludeFromCodeCoverage]
     internal class DatabaseConfigurationValidator
     {
         public ValidationResult Validate(DatabaseConfiguration config)

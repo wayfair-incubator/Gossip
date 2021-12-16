@@ -11,7 +11,7 @@ namespace Gossip.Connection
     /// <summary>
     /// Database Configuration
     /// </summary>
-
+    [ExcludeFromCodeCoverage]
     public class DatabaseConfiguration
     {
         /// <summary>

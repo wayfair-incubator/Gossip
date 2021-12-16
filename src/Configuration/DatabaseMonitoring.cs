@@ -5,7 +5,7 @@ using System.Threading;
 namespace Gossip.Configuration
 {
     /// <inheritdoc />
-
+    [ExcludeFromCodeCoverage]
     public class DatabaseMonitoring : IDatabaseMonitoring
     {
         /// <summary>
