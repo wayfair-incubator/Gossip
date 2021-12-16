@@ -11,12 +11,16 @@
     <RepositoryUrl>https://github.com/wayfair-incubator/Gossip</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>database, queries, dapper, gossip</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+    <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />    
