@@ -10,11 +10,13 @@ namespace Gossip.UnitTests.Utilities
     public class CollectionExtensionsTests
     {
         private List<int> _list;
+        private int _batchLength;
         
         [SetUp]
         public void SetUp()
         {
             _list = new List<int> { 1, 2, 3, 4, 5, 6 };
+            _batchLength = 2;
         }
 
         [Test]
@@ -22,16 +24,14 @@ namespace Gossip.UnitTests.Utilities
         {
             // arrange
             var wasExceptionCaught = false;
-            var errorMessage = string.Empty;
-            
+
             // act
             try
             {
                 foreach (var batch in _list.Batch(0)) { }
             }
-            catch(Exception e)
+            catch
             {
-                errorMessage = e.Message;
                 wasExceptionCaught = true;
             }
             
@@ -40,34 +40,37 @@ namespace Gossip.UnitTests.Utilities
         }
         
         [Test]
-        public void Batch_creates_a_batch()
+        public void Batch_creates_batches_of_the_appropriate_size_with_contents_in_original_order()
         {
-            // act
-            var index = 0;
+            // arrange
+            var expectedBatchOffset = 0;
             
-            foreach (var batch in _list.Batch(2))
+            foreach (var batch in _list.Batch(_batchLength))
             {
+                // act
+                var expectedBatch = _list.GetRange(expectedBatchOffset, _batchLength);
+                
                 // assert
-                Assert.AreEqual(batch.Length, 2);
-                CollectionAssert.AreEqual(batch, _list.GetRange(index, 2));
-                index += 2;
+                Assert.AreEqual(_batchLength, batch.Length);
+                CollectionAssert.AreEqual(expectedBatch, batch);
+                expectedBatchOffset += _batchLength;
             }
         }
 
         [Test]
-        public void BatchNoMultipleEnumeration_applies_function_to_batch()
+        public void BatchNoMultipleEnumeration_applies_function_to_each_batch_with_contents_changed_by_the_function_in_original_order()
         {
             // arrange
             var expectedList = new List<int> { 3, 4, 5, 6, 7, 8 };
             
             // act
-            var newList = _list.BatchNoMultipleEnumeration(IncreaseListElementsByTwo, 2);
+            var enumeratedList = _list.BatchNoMultipleEnumeration(IncreaseElementsInListByTwo, 2);
             
             // assert
-            CollectionAssert.AreEqual(newList, expectedList);
+            CollectionAssert.AreEqual(expectedList, enumeratedList);
         }
 
-        private static IEnumerable<int> IncreaseListElementsByTwo(IList<int> numbers)
+        private static IEnumerable<int> IncreaseElementsInListByTwo(IList<int> numbers)
         {
             return numbers.Select(number => number + 2).ToList();
         }
