@@ -9,7 +9,7 @@ namespace Gossip.UnitTests.Utilities
     [TestFixture]
     public class CollectionExtensionsTests
     {
-        private IEnumerable<int> _list;
+        private List<int> _list;
         
         [SetUp]
         public void SetUp()
@@ -43,10 +43,14 @@ namespace Gossip.UnitTests.Utilities
         public void Batch_creates_a_batch()
         {
             // act
+            var index = 0;
+            
             foreach (var batch in _list.Batch(2))
             {
                 // assert
                 Assert.AreEqual(batch.Length, 2);
+                CollectionAssert.AreEqual(batch, _list.GetRange(index, 2));
+                index += 2;
             }
         }
 
