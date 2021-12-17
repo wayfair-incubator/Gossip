@@ -34,3 +34,4 @@ jobs:
         with:
           branch: gh-pages
           folder: site/html
+          git-config-email: <>
