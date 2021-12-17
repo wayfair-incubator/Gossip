@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics.CodeAnalysis;
 using System.Dynamic;
 using System.Linq;
 
 namespace Gossip.Connection
 {
     /// <inheritdoc cref="IObjectDataReader"/>
+    [ExcludeFromCodeCoverage]
     internal class ExpandoObjectDataReader : IObjectDataReader
     {
         private readonly IEnumerator<ExpandoObject> _dataEnumerator;

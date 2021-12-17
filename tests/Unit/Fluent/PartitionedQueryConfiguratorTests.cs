@@ -60,5 +60,21 @@ namespace Gossip.UnitTests.Fluent
                 mockQueryExecutor.Verify(x => x.Query<int>(), Times.Exactly(data.Length / batchSize));
             }
         }
+        
+        public class When_the_query_executes_and_does_not_have_batchParam_variable
+        {
+            [Test]
+            public void It_should_throw_an_exception()
+            {
+                var queryExecutor = new Mock<IUpdatableQueryExecutor>();
+                var queryConfig = new QueryConfiguration
+                {
+                    Query = "select * from test_db.dbo.tblUser",
+                };
+                var data = new[] { 1, 2, 3 };
+                var configurator = new PartitionedQueryConfigurator<int>(queryExecutor.Object, queryConfig, data).WithBatchParamAsJsonArray();
+                Assert.Throws<Exception>(() => configurator.Execute());
+            }
+        }
     }
 }

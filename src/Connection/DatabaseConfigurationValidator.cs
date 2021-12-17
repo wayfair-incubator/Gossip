@@ -12,7 +12,7 @@ namespace Gossip.Connection
             return new ValidationResult { IsValid = true };
         }
     }
-
+    
     internal class ValidationResult
     {
         public bool IsValid { get; set; }
