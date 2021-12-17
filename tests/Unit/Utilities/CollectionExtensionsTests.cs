@@ -64,13 +64,13 @@ namespace Gossip.UnitTests.Utilities
             var expectedList = new List<int> { 3, 4, 5, 6, 7, 8 };
             
             // act
-            var enumeratedList = _list.BatchNoMultipleEnumeration(IncreaseElementsInListByTwo, 2);
+            var enumeratedList = _list.BatchNoMultipleEnumeration(IncreaseIntegersInListByTwo, 2);
             
             // assert
             CollectionAssert.AreEqual(expectedList, enumeratedList);
         }
 
-        private static IEnumerable<int> IncreaseElementsInListByTwo(IList<int> numbers)
+        private static IEnumerable<int> IncreaseIntegersInListByTwo(IList<int> numbers)
         {
             return numbers.Select(number => number + 2).ToList();
         }
