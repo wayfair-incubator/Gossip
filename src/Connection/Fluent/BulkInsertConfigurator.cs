@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace Gossip.Connection.Fluent
 {
     /// <inheritdoc cref="IBulkInsertConfigurator{T}"/>
-    [ExcludeFromCodeCoverage]
     public class BulkInsertConfigurator<T> : IBulkInsertConfigurator<T>
     {
         private readonly IEnumerable<T> _data;

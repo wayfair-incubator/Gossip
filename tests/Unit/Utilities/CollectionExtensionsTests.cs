@@ -10,6 +10,7 @@ namespace Gossip.UnitTests.Utilities
     public class CollectionExtensionsTests
     {
         private IEnumerable<int> _list;
+        
         [SetUp]
         public void SetUp()
         {
@@ -36,7 +37,6 @@ namespace Gossip.UnitTests.Utilities
             
             // assert
             Assert.IsTrue(wasExceptionCaught);
-            Assert.AreEqual(errorMessage, "Batch size cannot be zero unless you like endless CPU cycles!");
         }
         
         [Test]
