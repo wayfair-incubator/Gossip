@@ -1,5 +1,6 @@
 # Gossip
 
+[![Gossip Version](https://img.shields.io/nuget/v/Gossip?label=Latest%20Release)](https://github.com/wayfair-incubator/Gossip/blob/main/CHANGELOG.md)
 [![OSS Template Version](https://img.shields.io/badge/OSS%20Template-0.3.5-7f187f.svg)](https://github.com/wayfair-incubator/oss-template/blob/main/CHANGELOG.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
