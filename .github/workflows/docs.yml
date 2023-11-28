@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v2.7.0
 
       - name: Parse Docs
         uses: nikeee/docfx-action@v1.0.0
@@ -30,7 +30,7 @@ jobs:
           args: build docs/docfx.json
 
       - name: Deploy Docs
-        uses: JamesIves/github-pages-deploy-action@4.2.0
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           branch: gh-pages
           folder: site/html
