@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v4.2.2
       - name: Setup .NET
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 5.0.x
       - name: Restore Dependencies
@@ -31,7 +31,7 @@ jobs:
             /p:CoverletOutputFormat=opencover \
             /p:CoverletOutput=/home/runner/work/Gossip/ \
       - name: Publish Code Coverage
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v4
         with:
           files: /home/runner/work/Gossip/coverage.opencover.xml
           fail_ci_if_error: true
